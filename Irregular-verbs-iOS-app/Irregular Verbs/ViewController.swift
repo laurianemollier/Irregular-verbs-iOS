@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import SideMenu
+
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Define the menus
+        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let menu = mainstoryboard.instantiateViewController(withIdentifier: "menuViewController") as! MenuViewController
+        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: menu)
+
+//        SideMenuManager.default.menuRightNavigationController = menuLeftNavigationController
+
+//        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+//        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        
+        // (Optional) Prevent status bar area from turning black when menu appears:
+        SideMenuManager.default.menuFadeStatusBar = false
     }
 
 

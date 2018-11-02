@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		981F3D50218C253B00349F38 /* VerbDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F3D48218C253A00349F38 /* VerbDAO.swift */; };
 		981F3D51218C253B00349F38 /* VerbDAOImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F3D4F218C253B00349F38 /* VerbDAOImpl.swift */; };
+		981F3D55218C7AE200349F38 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F3D54218C7AE200349F38 /* MenuViewController.swift */; };
+		981F3D60218C810200349F38 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981F3D5F218C810200349F38 /* SideMenu.framework */; };
+		981F3D61218C810200349F38 /* SideMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 981F3D5F218C810200349F38 /* SideMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9899269A218601F900EB0A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98992699218601F900EB0A24 /* AppDelegate.swift */; };
 		9899269C218601F900EB0A24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899269B218601F900EB0A24 /* ViewController.swift */; };
 		9899269F218601F900EB0A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9899269D218601F900EB0A24 /* Main.storyboard */; };
@@ -133,6 +136,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				981F3D61218C810200349F38 /* SideMenu.framework in Embed Frameworks */,
 				9899272821862D0700EB0A24 /* SQLite.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -143,6 +147,9 @@
 /* Begin PBXFileReference section */
 		981F3D48218C253A00349F38 /* VerbDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbDAO.swift; sourceTree = "<group>"; };
 		981F3D4F218C253B00349F38 /* VerbDAOImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbDAOImpl.swift; sourceTree = "<group>"; };
+		981F3D54218C7AE200349F38 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		981F3D57218C80C000349F38 /* SideMenu.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SideMenu.framework.dSYM; path = Carthage/Build/iOS/SideMenu.framework.dSYM; sourceTree = "<group>"; };
+		981F3D5F218C810200349F38 /* SideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SideMenu.framework; path = Carthage/Build/iOS/SideMenu.framework; sourceTree = "<group>"; };
 		98992696218601F800EB0A24 /* Irregular Verbs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Irregular Verbs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98992699218601F900EB0A24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9899269B218601F900EB0A24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981F3D60218C810200349F38 /* SideMenu.framework in Frameworks */,
 				9899272621862D0100EB0A24 /* SQLite.framework in Frameworks */,
 				989926F521862AF500EB0A24 /* AVFoundation.framework in Frameworks */,
 				9899272721862D0700EB0A24 /* SQLite.framework in Frameworks */,
@@ -222,6 +230,7 @@
 		9899268D218601F800EB0A24 = {
 			isa = PBXGroup;
 			children = (
+				981F3D5F218C810200349F38 /* SideMenu.framework */,
 				98992698218601F800EB0A24 /* Irregular Verbs */,
 				989926AD218601FD00EB0A24 /* Irregular VerbsTests */,
 				989926B8218601FD00EB0A24 /* Irregular VerbsUITests */,
@@ -255,6 +264,7 @@
 				989926A5218601FC00EB0A24 /* Info.plist */,
 				989926F12186194A00EB0A24 /* AppInfos.swift */,
 				9899273C218632CC00EB0A24 /* Constants.swift */,
+				981F3D54218C7AE200349F38 /* MenuViewController.swift */,
 			);
 			path = "Irregular Verbs";
 			sourceTree = "<group>";
@@ -337,6 +347,7 @@
 		989926F321862AF400EB0A24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				981F3D57218C80C000349F38 /* SideMenu.framework.dSYM */,
 				9899270E21862CEA00EB0A24 /* SQLite.xcodeproj */,
 				989926F421862AF500EB0A24 /* AVFoundation.framework */,
 			);
@@ -609,6 +620,7 @@
 				989926EC218603EE00EB0A24 /* Audio.swift in Sources */,
 				9899275121864EC100EB0A24 /* DbUserLearningVerb.swift in Sources */,
 				989926EE218603EE00EB0A24 /* FirstLaunch.swift in Sources */,
+				981F3D55218C7AE200349F38 /* MenuViewController.swift in Sources */,
 				9899269C218601F900EB0A24 /* ViewController.swift in Sources */,
 				989926E1218603A700EB0A24 /* Date.swift in Sources */,
 				989927382186307400EB0A24 /* Form.swift in Sources */,
@@ -815,6 +827,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQPGG2M7LV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Irregular Verbs/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -835,6 +851,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQPGG2M7LV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Irregular Verbs/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
