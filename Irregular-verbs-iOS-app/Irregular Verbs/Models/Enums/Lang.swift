@@ -40,4 +40,47 @@ enum Lang: String{
     
     /// All Lang
     static let allValues = [DeviceLanguage, fr, en, es, ru, zh, ar, it, ja]
+    
+    static let numberLang: Int = allValues.count
+    
+    static func getAllExept(langs: [Lang]) -> [Lang]{
+        return Lang.allValues.filter({l in
+            !langs.contains(l)
+        })
+    }
+    
+    // TODO
+    func name() -> String{
+        switch self{
+        case Lang.en:
+            return "English"
+        case Lang.fr:
+            return "Français"
+        case Lang.es:
+            return "Español"
+        case Lang.ru:
+            return "Русский"
+        default:
+            return "Undefine"
+        }
+    }
+    
+    // TODO
+    func originalName() -> String{
+        switch self{
+        case Lang.en:
+            return "English"
+        case Lang.fr:
+            return "Français"
+        case Lang.es:
+            return "Español"
+        case Lang.ru:
+            return "Русский"
+        default:
+            return "Undefine"
+        }
+    }
+    
+    
+    
 }

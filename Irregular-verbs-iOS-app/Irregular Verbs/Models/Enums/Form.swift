@@ -26,5 +26,13 @@ public enum Form: String {
     case undefine = "undefine"
     case weak = "weak"
     
+    case AAA = "A-A-A"
+    case ABB = "A-B-B"
+    case ABA = "A-B-A"
+    case ABBn = "A-B-Bn"
+    case ABAn = "A-B-An"
+    case ABC = "A-B-C"
+    case enUs = "en-us"
+    
     static let allValues = [aiea, aua, eae, eao, eiieie, eiii, iao, iau, ieoo, undefine, weak]
 }

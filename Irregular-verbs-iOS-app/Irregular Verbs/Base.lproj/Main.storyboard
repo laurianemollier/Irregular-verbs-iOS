@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhF-ve-95N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OER-BI-k1j">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,62 +9,324 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="wUo-nB-poE">
+        <!--Navigation Controller-->
+        <scene sceneID="zb8-Ft-yK5">
             <objects>
-                <tableViewController storyboardIdentifier="menuViewController" id="J4L-Ev-Jdw" customClass="MenuViewController" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rim-pW-V8h">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXE-ph-TqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="OER-BI-k1j" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HfK-Xf-Glj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ruO-6B-gXm" kind="relationship" relationship="rootViewController" id="Smj-0c-R84"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1703" y="1308"/>
+        </scene>
+        <!--Home PortalVC-->
+        <scene sceneID="ZLG-BD-DUA">
+            <objects>
+                <viewController id="ruO-6B-gXm" customClass="HomePortalVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dwU-zc-W9h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vuY-gz-YJj">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vuY-gz-YJj" id="cG9-7A-AgC">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="J4L-Ev-Jdw" id="wkt-rR-Bbf"/>
-                            <outlet property="delegate" destination="J4L-Ev-Jdw" id="I62-MJ-57b"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Rbf-qG-cKh"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="INI-oq-xcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="vpi-wC-dOC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oap-Wu-5GQ">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="jz7-tJ-ZKK">
+                            <connections>
+                                <action selector="showSideMenu:" destination="ruO-6B-gXm" id="oyk-jn-Jn0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVS-ul-2Hv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="546" y="672"/>
+            <point key="canvasLocation" x="-852" y="1325"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="EqO-Kx-w6n">
+        <!--Revision PortalVC-->
+        <scene sceneID="kzV-Zw-zAm">
             <objects>
-                <viewController id="vhF-ve-95N" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dem-tq-2o8">
+                <viewController id="ezU-sg-BE8" customClass="RevisionPortalVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GzB-0h-bdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="kBe-3W-0g7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xk1-jP-L7K">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="zrN-aT-1hi">
+                            <connections>
+                                <action selector="showSideMenu:" destination="ezU-sg-BE8" id="KEE-bf-u1U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJj-TR-NKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="2187"/>
+        </scene>
+        <!--Add Verbs PortalVC-->
+        <scene sceneID="Gpd-WJ-IAS">
+            <objects>
+                <viewController id="QMT-Ng-Xqy" customClass="AddVerbsPortalVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F4P-zm-9y4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmV-pS-8wh">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUb-4v-27q">
+                                <rect key="frame" x="41" y="462" width="294" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add randomly some verbs in the review list"/>
                                 <connections>
-                                    <segue destination="8Tw-WP-rz7" kind="presentation" id="CnG-LN-cb7"/>
+                                    <segue destination="ota-mX-aUJ" kind="show" id="gJg-EH-xKh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3C-wn-GtV">
+                                <rect key="frame" x="43" y="334" width="292" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add manually some verbs to the review list"/>
+                                <connections>
+                                    <segue destination="Uzv-Ud-01r" kind="show" id="FT6-LP-8yk"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="dmV-pS-8wh" firstAttribute="centerX" secondItem="Dem-tq-2o8" secondAttribute="centerX" id="1U6-2X-GlK"/>
-                            <constraint firstItem="dmV-pS-8wh" firstAttribute="centerY" secondItem="Dem-tq-2o8" secondAttribute="centerY" id="ZlG-Tx-UCF"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="lY3-yX-N2I"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IyM-TH-xTx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dQt-pJ-Mtf">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Ba9-RP-bEm">
+                            <connections>
+                                <action selector="showSideMenu:" destination="QMT-Ng-Xqy" id="ynV-QP-bHy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yx0-eA-Rp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="3564"/>
+        </scene>
+        <!--All Verbs PortalVC-->
+        <scene sceneID="WdA-ns-Y1x">
+            <objects>
+                <viewController id="eef-Si-i5o" customClass="AllVerbsPortalVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qaa-Qs-0QX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7lc-ae-Ajj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KfA-0Y-BzE">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="6e5-4z-38S">
+                            <connections>
+                                <action selector="showSideMenu:" destination="eef-Si-i5o" id="ueY-H6-buG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zjl-gi-pN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="4866"/>
+        </scene>
+        <!--Statistics PortalVC-->
+        <scene sceneID="Mhm-Wg-jJZ">
+            <objects>
+                <viewController id="lN9-f9-xTG" customClass="StatisticsPortalVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="apd-7m-Z3R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Rqe-uH-k5Y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s9x-hN-bN4">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="QHd-qW-Hkc">
+                            <connections>
+                                <action selector="showSideMenu:" destination="lN9-f9-xTG" id="1mR-9p-6pV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ajc-3s-xkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="5611"/>
+        </scene>
+        <!--Settings PortalVC-->
+        <scene sceneID="cV0-bn-3b3">
+            <objects>
+                <viewController id="q4B-Qm-Ftf" customClass="SettingsPortalVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="agw-pa-EVF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qmo-ki-AJg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vnM-z6-dSo">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="ej0-2Q-UbK">
+                            <connections>
+                                <action selector="showSideMenu:" destination="q4B-Qm-Ftf" id="2xH-At-sA5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLG-S0-z7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="6344"/>
+        </scene>
+        <!--Invite Friends PortalVC-->
+        <scene sceneID="rtZ-xE-lBy">
+            <objects>
+                <viewController id="TxN-bh-Rzh" customClass="InviteFriendsPortalVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PTS-PP-4NO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Imc-wa-DeA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gwx-5f-Elm">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="ziN-xc-JsJ">
+                            <connections>
+                                <action selector="showSideMenu:" destination="TxN-bh-Rzh" id="hOW-K9-BgE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7e-gj-TWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="7057"/>
+        </scene>
+        <!--Grade The App PortalVC-->
+        <scene sceneID="eSg-6b-2f8">
+            <objects>
+                <viewController id="m4O-oM-pDc" customClass="GradeTheAppPortalVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="beh-nW-hRs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FaG-98-xDz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DTz-rS-Jc6">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="U35-FX-fCO">
+                            <connections>
+                                <action selector="showSideMenu:" destination="m4O-oM-pDc" id="IBp-qd-Iwu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ru-vP-VwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="7792"/>
+        </scene>
+        <!--Help PortalVC-->
+        <scene sceneID="Yv8-Wv-5vq">
+            <objects>
+                <viewController id="MC3-Y6-zZh" customClass="HelpPortalVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wEM-Gk-n91">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mri-Bl-CuQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GCT-uw-xUW">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="78M-oU-CBS">
+                            <connections>
+                                <action selector="showSideMenu:" destination="MC3-Y6-zZh" id="oNi-B6-0g5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNJ-5s-GMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="8497"/>
+        </scene>
+        <!--Add Verbs RandomlyVC-->
+        <scene sceneID="56D-nH-VCo">
+            <objects>
+                <viewController id="ota-mX-aUJ" customClass="AddVerbsRandomlyVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pI1-8g-Unr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="y6t-I8-daa"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j1q-7n-xyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VlE-Vd-hsl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-492" y="1439"/>
+            <point key="canvasLocation" x="105" y="3994"/>
+        </scene>
+        <!--Add Verbs ManuallyVC-->
+        <scene sceneID="PhL-2a-066">
+            <objects>
+                <viewController id="Uzv-Ud-01r" customClass="AddVerbsManuallyVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="prM-0j-YSh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LV1-Fl-pgI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GrK-4v-0X5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="3241"/>
+        </scene>
+        <!--Revision TypeVC-->
+        <scene sceneID="NcR-N5-c86">
+            <objects>
+                <viewController id="cfu-zb-0mQ" customClass="RevisionTypeVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dWf-YO-htX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsi-KX-UoA">
+                                <rect key="frame" x="164" y="178" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ub-hH-fn0">
+                                <rect key="frame" x="164" y="426" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KpY-pX-y1v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AsN-Wy-0RV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="2186"/>
+        </scene>
+        <!--Revision With SpellingVC-->
+        <scene sceneID="B0b-nz-UMb">
+            <objects>
+                <viewController id="AgB-5e-Z8q" customClass="RevisionWithSpellingVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pAb-c1-I0t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2VO-gF-Ik5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GX1-sr-lF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="2492"/>
+        </scene>
+        <!--Revision With CardsVC-->
+        <scene sceneID="sIr-0X-vzI">
+            <objects>
+                <viewController id="RR2-Qe-2yB" customClass="RevisionWithCardsVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J5Y-bM-gvm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Znh-2S-r8N"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oi1-HT-2J1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="1826"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="pZd-sD-LaX">
@@ -78,12 +340,59 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="J4L-Ev-Jdw" kind="relationship" relationship="rootViewController" id="Mum-tc-Nsh"/>
+                        <segue destination="nlK-jW-2Jy" kind="relationship" relationship="rootViewController" id="4lZ-oD-FJi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzZ-Bi-IIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-407" y="672"/>
+            <point key="canvasLocation" x="-4353" y="4865"/>
+        </scene>
+        <!--MenuVC-->
+        <scene sceneID="Tbs-cO-MLW">
+            <objects>
+                <viewController storyboardIdentifier="menuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nlK-jW-2Jy" customClass="MenuVC" customModule="Irregular_Verbs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OLg-wg-cAT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tVE-eO-x9N">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nlK-jW-2Jy" id="e0V-aj-mqf"/>
+                                    <outlet property="delegate" destination="nlK-jW-2Jy" id="2c8-9K-5Vq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tVE-eO-x9N" firstAttribute="leading" secondItem="STv-rB-v4Y" secondAttribute="leading" id="dVm-Z2-G10"/>
+                            <constraint firstItem="tVE-eO-x9N" firstAttribute="bottom" secondItem="STv-rB-v4Y" secondAttribute="bottom" id="opa-oR-959"/>
+                            <constraint firstItem="tVE-eO-x9N" firstAttribute="trailing" secondItem="STv-rB-v4Y" secondAttribute="trailing" id="puT-F7-0us"/>
+                            <constraint firstItem="tVE-eO-x9N" firstAttribute="top" secondItem="STv-rB-v4Y" secondAttribute="top" id="uUL-XQ-OoA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="STv-rB-v4Y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P6v-xl-CI6"/>
+                    <connections>
+                        <outlet property="table" destination="tVE-eO-x9N" id="kKw-9D-OS4"/>
+                        <segue destination="ruO-6B-gXm" kind="show" identifier="HomePortalVCSegueId" id="q4S-Nk-T77"/>
+                        <segue destination="ezU-sg-BE8" kind="show" identifier="RevisionPortalVCSegueId" id="GFM-dA-iqq"/>
+                        <segue destination="QMT-Ng-Xqy" kind="show" identifier="AddVerbsPortalVCSegueId" id="3fd-5U-FdD"/>
+                        <segue destination="eef-Si-i5o" kind="show" identifier="AllVerbsPortalVCSegueId" id="L7Y-Fj-epa"/>
+                        <segue destination="lN9-f9-xTG" kind="show" identifier="StatisticsPortalVCSegueId" id="83w-Pg-ynI"/>
+                        <segue destination="q4B-Qm-Ftf" kind="show" identifier="SettingsPortalVCSegueId" id="Uwb-Ac-mIl"/>
+                        <segue destination="TxN-bh-Rzh" kind="show" identifier="InviteFriendsPortalVCSegueId" id="cKp-9J-FfE"/>
+                        <segue destination="m4O-oM-pDc" kind="show" identifier="GradeTheAppPortalVCSegueId" id="5xF-nO-CG8"/>
+                        <segue destination="MC3-Y6-zZh" kind="show" identifier="HelpPortalVCSegueId" id="2GW-zI-04f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jH-Ex-eU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3604" y="4865"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Smj-0c-R84"/>
+    </inferredMetricsTieBreakers>
 </document>
