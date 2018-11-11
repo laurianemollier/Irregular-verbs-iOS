@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Initialise the database
+        if FirstLaunch().isFirstLaunch {
+            do{
+                try SetUpDatabase.setUp()
+            }
+            catch{
+                SpeedLog.print(error) // TODO: To show the user that they is an error by using a popup
+            }
+        }
+        
         return true
     }
 

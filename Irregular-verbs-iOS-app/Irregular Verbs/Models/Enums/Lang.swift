@@ -49,6 +49,11 @@ enum Lang: String{
         })
     }
     
+    
+    
+    
+    
+    
     // TODO
     func name() -> String{
         switch self{

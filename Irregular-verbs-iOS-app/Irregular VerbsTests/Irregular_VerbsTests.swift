@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Irregular_Verbs
+@testable import IrregularVerbs
 
 class Irregular_VerbsTests: XCTestCase {
 

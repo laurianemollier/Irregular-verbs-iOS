@@ -9,6 +9,8 @@
 import UIKit
 
 class RevisionTypeVC: UIViewController {
+    
+    var verbsToReview: [UserLearningVerb]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
